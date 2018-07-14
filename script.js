@@ -51,7 +51,7 @@ function validateForm() {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       //display error message
-      document.getElementById("error").innerHTML = "Input required"
+      document.getElementById("error").innerHTML = "Input required";
       // and set the current valid status to false:
       valid = false;
     }
