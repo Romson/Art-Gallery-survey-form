@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Art Gallery visitor feedback - Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="main" class="container-fluid">
+            <div class="container container-fluid">
+                <div class="col1 text-center">
+                    <figure>
+                        <img src="images/survey.svg" alt="survey form logo" >
+                    </figure>
+                    <h1 id="title">Art Gallery survey</h1>
+                    <p id="description">How to paint. That's easy. What to paint. That's much harder. Anything you want to do you can do here. La- da- da- da- dah. Just be happy.</p>
+                    <p>
+                        <a href="http://www.bobrosslipsum.com/" target="_blank">Bob Ross ipsum</a>
+                    </p>
+                </div>
+                <div class="col2">
+                    <!--Form wizard-->                    
+                    <form id="survey-form">                                                   
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab">   
+                            <h2 class="formHeader">Enter your details</h2>                         
+                            <!--1strow-->
+                            <div class="containerStep1">
+                                <!--Col1-->
+                                <div class="col1Step1">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label id="name-label" class="labelMargin" for="name">Name*</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="text" name="firstname" id="name" class="form-control" placeholder="First name" required oninput="this.className = ''"> 
+                                            <div id="error"></div>                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Col2-->
+                                <div class="col2Step1">
+                                    <input type="text" name="lastname" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                            <!--2nd row-->                            
+                            <div class="containerStep1">
+                                <!--Col1-->
+                                <div class="col1Step1">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label id="email-label" class="labelMargin" for="email">Email*</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required oninput="this.className = ''">                         <div id="error"></div>              
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            <!--Col2-->
+                                    <div class="col2Step1">
+                                        <input type="tel" name="usrtel" class="form-control" placeholder="Phone Number">
+                                    </div>
+                            </div>
+                            <!--3rd row-->
+                            <div class="containerStep1">
+                                <!--Col1-->
+                                <div class="col1Step1">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label id="number-label" class="labelMargin" for="email">Age*</label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <input type="number" name="number" id="number" class="form-control" placeholder="Age" min="11" max="95" required oninput="this.className = ''">
+                                            <div id="error"></div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Col2-->
+                                <div class="col2Step1">
+
+                                    
+                                    <fieldset>
+                                        <div class="radio">
+                                            <label>Male<input name="radio-buttons" value="1"  type="radio"></label>
+
+                                            <label>Female<input name="radio-buttons" value="1"  type="radio"></label>
+                                        </div>
+
+                                </div>
+                            </div>
+                        <!--1st Tab ending DIV-->
+                        </div>                        
+                        <!--2nd Tab-->
+                        <div class="tab">
+                            <h2 class="formHeader">How shall we contact you?</h2> 
+                            <div>
+                                <input placeholder="Address">
+                            </div>                            
+                            <div class="containerStep1">
+                                <!--Col1-->
+                                <div class="col1Step1">
+                                    <input type="text" name="city" class="form-control" placeholder="City">                             
+                                </div>
+                                <!--Col2-->
+                                <div class="col2Step1">
+                                    <input type="text" name="zip" class="form-control" placeholder="Zip">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select id="dropdown" class="custom-select my-1 mr-sm-2">
+                                    <option value="choose">Choose...</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="email">e-Mail</option>
+                                    <option value="skype">Skype</option>
+                                </select>
+                            </div>
+                        <!--2nd Tab ending DIV-->
+                        </div>
+                        <!--3rd tab-->  
+                        <div class="tab">
+                            <h2 class="formHeader">Overall satisfaction?</h2> 
+                            <div class="row checkboxRow">
+                                <div class="col-md-8 col-sm-8">
+                                    I am very satisfied
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="checkbox" name="vehicle1" value="1">    
+                                </div>
+                            </div>
+                            <div class="row checkboxRow">
+                                <div class="col-md-8 col-sm-8">
+                                    I am somewhat satisfied
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="checkbox" name="vehicle1" value="2">    
+                                </div>
+                            </div>
+                            <div class="row checkboxRow">
+                                <div class="col-md-8 col-sm-8">
+                                    Neutral
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="checkbox" name="vehicle1" value="3">    
+                                </div>
+                            </div>
+                            <div class="row checkboxRow">
+                                <div class="col-md-8 col-sm-8">
+                                    I am somewhat dissatisfied
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="checkbox" name="vehicle1" value="4">    
+                                </div>
+                            </div>
+                            <div class="row checkboxRow">
+                                <div class="col-md-8 col-sm-8">
+                                    I am very dissatisfied
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input type="checkbox" name="vehicle1" value="5">    
+                                </div>
+                            </div>                               
+                        <!--3rd Tab ending DIV-->
+                        </div>
+                            
+                        <div class="tab">
+                            <h2 class="formHeader">What should we improve?</h2> 
+                            <textarea class="form-control" rows="7" id="textarea" placeholder="Give us your feedback..."></textarea>
+                        </div>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                                <button class="btn-info" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                <button class="btn-primary" type="submit" id="submit" onclick="nextPrev(1)">Submit</button>
+                            </div>
+                        </div>                            
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align:center;margin-top:40px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>                            
+                    </form>               
+                </div>
+            </div>
+        </section>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
