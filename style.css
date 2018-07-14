@@ -33,21 +33,7 @@ footer a {
     grid-template-areas: "column1 column2"; 
 }
 
-@media (max-width: 700px) and (min-width: 300px) {
-    .container {
-        grid-template-columns: 100% 100%;
-
-        grid-template-areas:
-        "column1"
-        "column2";
-    }
-
-    #main {
-        width: 100vw;
-    }
-}
-
-@media (max-width: 999px) {
+@media (max-width: 999px) and (min-width: 300px) {
     .container {
         grid-template-columns: 100% 100%;
 
