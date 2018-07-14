@@ -51,12 +51,12 @@ function validateForm() {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       //display error message
-      document.getElementById("error").innerHTML = "Input required"
+      document.getElementById("error").innerHTML = "Input required";
       // and set the current valid status to false:
       valid = false;
     }
   }
-  
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
